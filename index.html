@@ -619,10 +619,16 @@
             canvas: "game-canvas",
             assetsURI: "assets.epk",
             localesURI: "lang/",
-            servers: [
-                { addr: "wss://mc.pindik.net:8443", name: "Pındık Official 1.21.11" }
-            ]
+            servers: []
+            singleplayerEnabled: true,
+            allowserverlisting: false
         };
     </script>
+    <!-- wss yönlendirmesi yerine Yerel Dünya Yükleme/Başlatma -->
+<button class="btn-pindik" id="btn-direct-connect" style="border-color: rgba(16, 185, 129, 0.3);">
+    <span class="btn-icon">📁</span>
+    <span class="btn-text" style="color: var(--green-primary);">Yerel Dünya Yükle / Başlat</span>
+    <span class="btn-arrow">➔</span>
+</button>
 </body>
 </html>
